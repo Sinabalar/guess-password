@@ -54,10 +54,10 @@ def display(guess):
 
 
 random.seed()
-start_time = datetime.datetime.now()
 target_pass = give_password()
 best_parent = generate_parent(len(target_pass))
 best_fitness = get_fitness(best_parent)
+start_time = datetime.datetime.now()
 display(best_parent)
 num_of_trys = 0
 num_of_displays = 0
